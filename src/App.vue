@@ -20,7 +20,8 @@ export default {
     }
   },
   mounted () {
-    axios.get("http://localhost:3001/api/users").then(res => {
+    console.log("什么贵?", process.env)
+    axios.get(process.env.VUE_APP_API_BASE_URL + "/users").then(res => {
       this.users = res.data
     })
   }
