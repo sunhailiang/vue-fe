@@ -2,8 +2,6 @@
 node_modules
 /dist
 package-lock.json
-.dockerignore
-
 # local env files
 .env.local
 .env.*.local
